@@ -14,8 +14,8 @@ description = """
 A Python package providing buffer compression and transformation codecs \
 for use in data storage and communication applications."""
 readme = "README.rst"
-dependencies = ["numpy>=1.24", "typing_extensions"]
-requires-python = ">=3.11"
+dependencies = ["numpy>=2", "typing_extensions"]
+requires-python = ">=3.12"
 dynamic = [
   "version",
 ]
@@ -253,7 +253,7 @@ cxx-compiler = ">=1.9.0,<2"
 hatch = '==1.14.1'
 
 [[tool.hatch.envs.test.matrix]]
-python = ["3.11"]
+python = ["3.12"]
 zarr = ["3.0.10", "3.1.0"]
 
 [tool.hatch.envs.test]
